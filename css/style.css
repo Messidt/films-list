@@ -5,8 +5,10 @@
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Archivo Black', sans-serif;
   font-size: 10px;
+  text-transform: uppercase;
+  color: white;
 }
 
 .wrapper {
@@ -15,11 +17,12 @@ body {
   margin: 20px auto;
   border-radius: 6px;
   border: 1px solid gray;
+  background-color: black;
 }
 
 header {
-  background: lightgray;
   padding: 10px;
+  border-bottom: 1px solid white;
 }
 
 header h1 {
@@ -45,13 +48,16 @@ header h1 {
   margin: 20px 10px;
   padding: 10px;
   font-size: 1.5rem;
-  border-left: 5px solid #ddd;
-  border-right: 5px solid #ddd;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
 }
 
+
 #films-list li:hover {
-  border-color: black;
+  border-color: #eab30b;
 }
+
+
 
 .delete-movie {
   float: right;
@@ -61,7 +67,7 @@ header h1 {
 }
 
 .delete-movie:hover {
-  background: darkgrey;
+  background: crimson;
 }
 
 #add-movie {
@@ -72,7 +78,7 @@ header h1 {
 #add-movie input {
   display: block;
   font-size: 1.5rem;
-  border: 1px solid black;
+  border: none;
   width: 80%;
   max-width: 280px;
   border-radius: 5px;
@@ -87,12 +93,12 @@ header h1 {
   font-size: 1.5rem;
   width: 80px;
   border-radius: 5px;
-  border: 1px solid lightgrey;
+  border: none;
   padding: 10px;
 }
 
 #add-movie button:hover {
-  background: darkgrey;
+  background: #eab30b;
 }
 
 #add-movie:after {

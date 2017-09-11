@@ -15,7 +15,7 @@ const addForm = document.forms['add-movie'];
 
 addForm.addEventListener('submit', function(e){
   e.preventDefault();
-  const value = addForm.querySelector('input[type="text"]').value;
+  let value = addForm.querySelector('input[type="text"]').value;
 
   // creating elements
   const newLi = document.createElement('li');
@@ -24,7 +24,7 @@ addForm.addEventListener('submit', function(e){
 
   // adding content
   newTitle.textContent = value;
-  newDelBtn.textContent = 'delete';
+  newDelBtn.textContent = 'X';
 
   //adding classes
   newTitle.classList.add('movie-title');
@@ -35,5 +35,8 @@ addForm.addEventListener('submit', function(e){
   newLi.appendChild(newDelBtn);
   list.appendChild(newLi);
 
+  setTimeout(function(){
+    addForm.reset();
+  }, 1);
 
 });
